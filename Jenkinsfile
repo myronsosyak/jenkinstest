@@ -1,11 +1,11 @@
 node {
     
     checkout scm
-    properties(
-        parameters {
-            booleanParam(defaultValue: true, description: 'dsgfdsgfdgdf', name: 'testarg')
-        }
-    )
+    properties([
+        parameters([
+            string(name: 'testarg', defaultValue: 'DEFAULT', description: 'The target environment', )
+        ])
+    ])
     def common = load "common/echo.groovy"
 
     stage('Build') {
