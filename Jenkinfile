@@ -1,9 +1,0 @@
-node {
-    checkout scm
-    def common = load "common/echo.groovy"
-
-    stage('Build') {
-        pipeline.common.echo2('Building....')
-    }
-    load 'Jenkinsfile_2'
-}
