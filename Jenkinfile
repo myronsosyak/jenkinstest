@@ -1,6 +1,6 @@
-def common = load "common/echo.groovy"
-
 node {
+    def common = load "common/echo.groovy"
+
     stage('Build') {
         common.echo('Building....')
     }
