@@ -3,7 +3,7 @@ node {
     checkout scm
     
     parameters {
-        booleanParam(defaultValue: true, description: 'dsgfdsgfdgdf', name: 'testarg', defaultValue: 'DEFAULT')
+        booleanParam(defaultValue: true, description: 'dsgfdsgfdgdf', name: 'testarg')
     }
 
     def common = load "common/echo.groovy"
