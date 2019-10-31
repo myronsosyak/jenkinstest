@@ -1,4 +1,5 @@
 node {
+    def testarg = "DEFAULT"
     checkout scm
     
     parameters {
