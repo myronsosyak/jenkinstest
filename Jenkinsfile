@@ -2,13 +2,13 @@ node {
     checkout scm
     
     parameters {
-        booleanParam(defaultValue: true, description: 'dsgfdsgfdgdf', name: 'userFlag')
+        booleanParam(defaultValue: true, description: 'dsgfdsgfdgdf', name: 'testarg')
     }
 
     def common = load "common/echo.groovy"
 
     stage('Build') {
-        common.echo2('Building....')
+        common.echo2("${testarg}")
     }
     load 'Jenkinsfile_2'
 }
