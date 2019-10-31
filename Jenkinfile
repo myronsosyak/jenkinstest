@@ -3,7 +3,7 @@ node {
     def common = load "common/echo.groovy"
 
     stage('Build') {
-        common.echo('Building....')
+        common.echo2('Building....')
     }
     load 'Jenkinsfile_2'
 }

@@ -1,8 +1,8 @@
 def common = load "common/echo.groovy"
 
 stage('Test') {
-    common.echo('Testing....')
+    common.echo2('Testing....')
     }
 stage('Deploy') {
-    common.echo('Deploying....')
+    common.echo2('Deploying....')
 }
