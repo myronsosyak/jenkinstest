@@ -1,0 +1,8 @@
+def common = load "common/echo.groovy"
+
+node {
+    stage('Build') {
+        common.echo('Building....')
+    }
+    load 'Jenkinsfile_2'
+}

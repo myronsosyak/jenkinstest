@@ -1,0 +1,8 @@
+def common = load "common/echo.groovy"
+
+stage('Test') {
+    common.echo('Testing....')
+    }
+stage('Deploy') {
+    common.echo('Deploying....')
+}
