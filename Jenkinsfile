@@ -1,11 +1,13 @@
-node {
-    
-    checkout scm
-    properties([
+ properties([
         parameters([
             string(name: 'testarg', defaultValue: 'DEFAULT', description: 'The target environment', )
         ])
     ])
+    
+node {
+    
+    checkout scm
+   
     def common = load "common/echo.groovy"
 
     stage('Build') {
