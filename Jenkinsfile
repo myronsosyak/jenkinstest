@@ -1,3 +1,5 @@
+load "common/common.groovy"
+
  properties([
         parameters([
             string(name: 'testarg', defaultValue: 'DEFAULT', description: 'The target environment', )
