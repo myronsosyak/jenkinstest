@@ -5,9 +5,11 @@
     ])
     
 node {
-    load "common/common.groovy"
     checkout scm
-   
+
+
+
+    load "common/common.groovy"
     def common = load "common/echo.groovy"
 
     stage('Build') {
