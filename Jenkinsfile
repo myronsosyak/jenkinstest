@@ -1,5 +1,3 @@
-load "common/common.groovy"
-
  properties([
         parameters([
             string(name: 'testarg', defaultValue: 'DEFAULT', description: 'The target environment', )
@@ -7,7 +5,7 @@ load "common/common.groovy"
     ])
     
 node {
-    
+    load "common/common.groovy"
     checkout scm
    
     def common = load "common/echo.groovy"
